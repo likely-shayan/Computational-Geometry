@@ -61,7 +61,7 @@ int main() {
 
     // Find Convex Hull using Graham Scan algorithm.
     // This takes O(n logn) time for n input points.
-    CGAL::ch_eddy(Points.begin(), Points.end(), std::back_inserter(result3));
+    CGAL::ch_graham_andrew(Points.begin(), Points.end(), std::back_inserter(result3));
     std::cout << "Graham's Scan: ";
     printPoints(result3);
 
